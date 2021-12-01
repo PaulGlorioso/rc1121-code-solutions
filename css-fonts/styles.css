@@ -1,0 +1,10 @@
+h1,h2 {
+  font-family: 'Teko', sans-serif;
+}
+p {
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  line-height: 20px;
+}
