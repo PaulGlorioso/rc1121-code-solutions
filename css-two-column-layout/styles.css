@@ -1,0 +1,64 @@
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-basis: calc(100% / 3);
+  padding: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h3,
+p {
+  font-family: "Karla", sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+button {
+  color: #d6625c;
+  border: 3px solid #d6625c;
+  background-color: white;
+  width: 200px;
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.headp {
+  text-align: center;
+  width: 750px;
+}
+
+img {
+  width: 130px;
+}
