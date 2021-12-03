@@ -1,3 +1,7 @@
+#verou {
+  color: black !important;
+}
+
 #timbl {
   color: red;
 }
@@ -12,8 +16,4 @@ p {
 
 * {
   color: blue;
-}
-
-#verou {
-  color: black !important;
 }
