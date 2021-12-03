@@ -1,19 +1,19 @@
 .container {
-  /* width: 1000px; */
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px;
 }
 
-.column {
+.column-half {
+  display: flex;
   flex-basis: calc(100% / 4);
-  max-width: 300px;
 }
 
 .header {
@@ -58,6 +58,6 @@ button {
   width: 750px;
 }
 
-.imgcolumn {
-  margin-left: 100px;
+.imagecolumn {
+  width: 100%;
 }
