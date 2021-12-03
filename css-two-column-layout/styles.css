@@ -1,20 +1,19 @@
 .container {
-  max-width: 1000px;
+  /* width: 1000px; */
   margin-left: auto;
   margin-right: auto;
 }
 
 .row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .column {
-  flex-basis: calc(100% / 3);
-  padding: 50px;
+  flex-basis: calc(100% / 4);
+  max-width: 300px;
 }
 
 .header {
@@ -59,6 +58,6 @@ button {
   width: 750px;
 }
 
-img {
-  width: 130px;
+.imgcolumn {
+  margin-left: 100px;
 }
