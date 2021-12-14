@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: gre;
+}
+
+.container {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.modalbtn {
+  background-color: #4a4ae9;
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 0 solid;
+  border-radius: 3px;
+  box-shadow: 0 3px rgb(143 142 142 / 43.2%);
+}
+
+.surveybtn {
+  background-color: #ea5d5d;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 0 solid;
+  border-radius: 3px;
+  box-shadow: 1px 2px rgb(88 88 88 / 43.2%);
+}
+
+h3 {
+  font-family: sans-serif;
+  padding-bottom: 40px;
+}
+
+.popup.closed {
+  display: none;
+}
+
+.popup.open {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  right: 50%;
+  bottom: 50%;
+  width: 100%;
+}
+
+.survey {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.overlay.off {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 64.4%);
+  bottom: 0;
+}
+
+.overlay.on {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #323232e1;
+  bottom: 0;
+}
