@@ -1,0 +1,44 @@
+.light.on {
+  background-color: white;
+}
+
+.light.off {
+  background-color: #111;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.container.off {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulb.on {
+  width: 250px;
+  border: 0 solid white;
+  background-color: rgb(255 255 0 / 75.3%);
+  border-radius: 50%;
+  height: 250px;
+}
+
+.bulb.off {
+  width: 250px;
+  height: 250px;
+  background-color: #252525;
+  border: 0 solid #121212;
+  border-radius: 50%;
+}
