@@ -1,0 +1,440 @@
+    1  git config --global user.name "Paul Glorioso"
+    2  git config --global user.email "goldcansio@gmail.com"
+    3  git config --global --list
+    4  git status
+    5  cd ~/repos/driving-game
+    6  git status
+    7  git branch issue-2-turn-the-car
+    8  git branch --list
+    9  git switch issue-2-turn-the-car
+   10  git status
+   11  git add css/styles.css
+   12  git add js/main.js
+   13  git add index.html
+   14  git status
+   15  git add CSS/styles.css
+   16  git status
+   17  git add JS/main.js
+   18  git status
+   19  git commit -m "Added event listener to match directional arrow keys and car direction
+   20  git commit -m "Added event listener to match directional arrow keys and car direction."
+   21  cs ~/repos/driving-game
+   22  cd ~/repos/driving-game
+   23  git status
+   24  git commit -m "Added event listener to match car direction to arrow keys."
+   25  git status
+   26  git add JS/main.js
+   27  git status
+   28  git commit -m "Added event listener to match car to arrow directional keys, got rid of console log."
+   29  git status
+   30  git push origin issue-2-turn-the-car
+   31  git status
+   32  git add CSS/styles.css
+   33  git status
+   34  git commit -m "Changed car width to rem instead of a percentage to car does not scale with window size."
+   35  git push origin issue-2-turn-the-car
+   36  git status
+   37  cd ~/repos/driving-game
+   38  git status
+   39  cd ~/repos/driving-game
+   40  git status
+   41  git switch master
+   42  git restore CSS/styles.css
+   43  git restore JS/main.js
+   44  git restore index.html
+   45  git switch master
+   46  git pull origin master
+   47  git status
+   48  cd
+   49  clear
+   50  cd
+   51  cd ~/repos/rc1121-code-solutions
+   52  git stats
+   53  git status
+   54  git branch http-messages
+   55  git switch http-messages
+   56  git status
+   57  clear
+   58  http https://example.com
+   59  http --verbose https://example.com
+   60  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/user.json
+   61  http --body GET https://example.com > http-messages/index.html
+   62  git status
+   63  git add http-messages
+   64  git status
+   65  git commit -m "Completed http-messages exercise."
+   66  git push origin http-messages
+   67  http --help
+   68  git switch master
+   69  git pull origin master
+   70  git status
+   71  git branch javascript-ajax
+   72  git switch javascript-ajax
+   73  git status
+   74  git add javascript-ajax
+   75  git status
+   76  git commit -m "Completed javascript-ajax exercise."
+   77  git push origin javascript-ajax
+   78  git switch master
+   79  git pull origin master
+   80  git status
+   81  cd ~/repos/driving-game
+   82  git status
+   83  git branch --list
+   84  git branch issue-3-start-the-car
+   85  gti switch issue-3-start-the-car
+   86  git switch issue-3-start-the-car
+   87  git status
+   88  git add CSS/styles.css
+   89  git add JS/main.js
+   90  git status
+   91  git commit -m "Added to event listener if spacebar is pressed, the car will move left. Added gps var to track car on which way its facing, and its x and y coordinates."
+   92  git commit --amend
+   93  http http://acnhapi.com/
+   94  http http://acnhapi.com/v1/fish/
+   95  http http://acnhapi.com/v1/fish/{squid}
+   96  http http://acnhapi.com/v1/fish/{'squid'}
+   97  http http://acnhapi.com/v1/fish/"bitterling"
+   98  http http://acnhapi.com/v1/houseware/color-1/yellow
+   99  http https://playerdb.co/api/player/minecraft/$ID
+  100  http https://www.dnd5eapi.co/api/spells/acid-arrow/
+  101  http https://www.dnd5eapi.co/api/races/"Drow"
+  102  http https://www.dnd5eapi.co/api/races/"Dark Elf"
+  103  http https://www.dnd5eapi.co/api/races/"Dwarf"
+  104  http https://www.dnd5eapi.co/api/races/"dwarf"
+  105  http https://www.dnd5eapi.co/api/races/"dark elf"
+  106  http https://www.dnd5eapi.co/api/races/"dark-elf"
+  107  http https://www.dnd5eapi.co/api/races/"tabaxi"
+  108  http https://www.dnd5eapi.co/api/races/"elf"
+  109  http https://www.dnd5eapi.co/api/races/
+  110  http https://www.dnd5eapi.co/api/races/"tiefling"
+  111  http https://www.dnd5eapi.co/api/subraces
+  112  http https://www.dnd5eapi.co/api/
+  113  http https://acnhapi.com/v1a/
+  114  http https://acnhapi.com/v1a/fish/
+  115  http https://acnhapi.com/v1a/fish/"squid"
+  116  http api.open5e.com
+  117  http https://api.open5e.com/spells/
+  118  http https://api.open5e.com/races/
+  119  http https://api.open5e.com/planes/
+  120  cd ~/repos
+  121  cd ajax-project
+  122  git status
+  123  git branch issue-1-to-do-list
+  124  git switch issue-1-to-do-list
+  125  git status
+  126  git add index.html
+  127  git status
+  128  git commit -m "Added nav element with an anchor tag for each feature"
+  129  git push origin issue-1-to-do-list
+  130  cd ~/repos/ajax-project
+  131  git add index.html
+  132  git status
+  133  git commit -m "Added p element for when task list is empty, added icon link and 3 bars icon, added ul element."
+  134  git push origin issue-1-to-do-list
+  135  git add index.html
+  136  git status
+  137  git commit -m "Added seperate div elements for each tab with specific class names."
+  138  git push origin issue-1-to-do-list
+  139  git status
+  140  git add index.html
+  141  git status
+  142  git commit -m "Added new div tree for form with input and button."
+  143  git push origin issue-1-to-do-list
+  144  git status
+  145  git add index.html
+  146  git add images/background.png
+  147  git status
+  148  git commit -m "Added false tasks with checkboxes and edit icon, labeled buttons for submitting form and adding a task, added an background png to images folder."
+  149  git push origin issue-1-to-do-list
+  150  git status
+  151  git add css/styles.css
+  152  git add index.html
+  153  git status
+  154  git commit -m "Added classes to different elements, added new CSS rulesets to match figma, both p element and add form are hidden."
+  155  git status
+  156  git add css/style.css
+  157  git status
+  158  git commit -m "Added classes to different elements, added new CSS rulesets to match figma, both p element and add form are hidden."
+  159  git status
+  160  git add css/style.css
+  161  git status
+  162  git restore css/styles.css
+  163  git staus
+  164  git status
+  165  clear
+  166  cd ~/repos/ajax-project
+  167  git status
+  168  git add css/styles.css
+  169  git staus
+  170  git status
+  171  git commit -m "Added new classes to elements, added CSS rules to match figma, p and add form are hidden."
+  172  git push origin issue-1-to-do-list
+  173  git status
+  174  git add css/layout.css
+  175  git add css/styles.css
+  176  git add index.html
+  177  git status
+  178  git commit -m "Moved CSS rulesets between layout and styles, changed input to textarea in form, made page more mobile friendly."
+  179  git status
+  180  git add css/styles.css
+  181  git status
+  182  git commit -m "Moved CSS rulesets between layout and styles, changed input to textarea in form, made page more mobile friendly."
+  183  git push origin issue-1-to-do-list
+  184  git status
+  185  cd ~/repos/rc1121-code-solutions
+  186  git switch issue-1-to-do-list
+  187  cd
+  188  cd ~/repos/ajax-project
+  189  git status
+  190  git add ajax-project
+  191  git add css/layout.css
+  192  git add css/styles.css
+  193  git add index.html
+  194  git add js/main.js
+  195  git add images/placeholder-image-square.jpg
+  196  git status
+  197  git add js/data.js
+  198  git status
+  199  git commit -m "Cleaned up CSS, added in function to show add task form, added placeholder image, added general skeleton to data.js."
+  200  git push origin issue-1-to-do-list
+  201  git status
+  202  git add index.html
+  203  git add js/main.js
+  204  git status
+  205  git commit -m "Commented out faux tasks to test whether certain elements disappear as intended, add function to render new tasks."
+  206  git status
+  207  git push origin issue-1-to-do-list
+  208  git status
+  209  git add index.html
+  210  git add js/main.js
+  211  git status
+  212  git commit -m "Clean slate before editing function"
+  213  git push origin issue-1-to-do-list
+  214  git status
+  215  git add js/main.js
+  216  git statsus
+  217  git status
+  218  git commit -m "Added function listen event to allow for editing a task."
+  219  git push origin issue-1-to-do-list
+  220  git status
+  221  git add css/layout.css
+  222  git add css/styles.css
+  223  git add js/main.js
+  224  git status
+  225  git commit -m "Added a delete button when edit icon is clicked, styled with CSS."
+  226  git push origin issue-1-to-do-list
+  227  git status
+  228  git add js/main.js
+  229  git status
+  230  git commit -m "Able to delete tasks with delete button."
+  231  git push origin issue-1-to-do-list
+  232  cd ~/repos/ajax-project
+  233  git status
+  234  git add css/layout.css
+  235  git add css/styles.css
+  236  git add index.html
+  237  git add js/main.js
+  238  git status
+  239  git commit -m "Added functionality for nav bar to pop up on the left side on mobile view."
+  240  git push origin issue-1-to-do-list
+  241  git status
+  242  cd ~/repos
+  243  git clone git@github.com:PaulGlorioso/week-planner.git
+  244  cd week-planner
+  245  npm ci
+  246  git pull origin master
+  247  git add .
+  248  git status
+  249  git commit -m "Added cssrulesets to modal" --no-verify
+  250  git push origin master
+  251  git pull origin master
+  252  git add .
+  253  git commit -m "Added local storage save" --no-verify
+  254  git push origin master
+  255  git pull origin master
+  256  git add .
+  257  git status
+  258  git commit -m "Started function to create td."
+  259  git commit -m "Started function to create td." --no-verify
+  260  git push origin master
+  261  git pull origin master
+  262  git status
+  263  git pull origin master
+  264  git restore main.js
+  265  git status
+  266  git pull origin master
+  267  git add .
+  268  git status
+  269  git commit -m "Set up view function." --no-verify
+  270  git push origin master
+  271  git pull origin master
+  272  git add .
+  273  git commit -m "Colored button to blue." --no-verify
+  274  git push origin master
+  275  cd ~/repos/rc1121-code-solutions
+  276  git status
+  277  git pull origin master
+  278  git branch es6-const-let
+  279  git switch es6-const-let
+  280  git status
+  281  git add es6-const-let
+  282  git status
+  283  git commit -m "Completed es6-const-let exercise."
+  284  git push origin es6-const-let
+  285  git switch master
+  286  git pull origin master
+  287  git status
+  288  git branch es6-template-literals
+  289  git swtich es6-template-literals
+  290  git switch es6-template-literals
+  291  git status
+  292  git add es6-template-literals
+  293  git status
+  294  git commit -m "Completed es6-template-literals."
+  295  git push origin es6-template-literals
+  296  git switch master
+  297  gti status
+  298  git pull origin master
+  299  git status
+  300  git branch es6-destructuring
+  301  git switch es6-desturcturing
+  302  git branch --list
+  303  git status
+  304  git branch --list
+  305  git switch es6-desturcturing
+  306  git switch es6-destructuring
+  307  git status
+  308  git add es6-destructuring
+  309  git status
+  310  git commit -m "Completed es6-destructuring exercise."
+  311  git push origin es6-destructuring
+  312  git switch master
+  313  git pull origin master
+  314  git status
+  315  git branch es6-arrow-functions
+  316  git switch es6-arrow-functions
+  317  git status
+  318  git add es6-arrow-functions
+  319  git commit -m "Completed es6-arrow-functions exercise."
+  320  git push origin es6-arrow-functions
+  321  git switch master
+  322  git pull origin master
+  323  git status
+  324  git branch command-line-basics
+  325  git switch command-line-basics
+  326  cd command-line-basics
+  327  pwd
+  328  man man
+  329  man cat
+  330  man man
+  331  man cat
+  332  man cat --help
+  333  cat laziness.text
+  334  pwd
+  335  cd ~/repos/rc1121-code-solutions/command-line-basics
+  336  man
+  337  man ls
+  338  man echo
+  339  man touch
+  340  man mkdir
+  341  man mv
+  342  man rm
+  343  man cp
+  344  ls
+  345  cd
+  346  cd ~/repos/rc1121-code-solutions
+  347  git switch master
+  348  git status
+  349  git pull origin master
+  350  git branch node-intro
+  351  git switch node-intro
+  352  node --version
+  353  man node
+  354  node hello-node.js
+  355  node
+  356  node hello-node.js
+  357  clear
+  358  node
+  359  node hello-node.js
+  360  nodje
+  361  node
+  362  cd node-intro
+  363  node hello-node.js
+  364  git status
+  365  cd
+  366  cd ~/repos/rc1121-code-solutions
+  367  git status
+  368  git add node-intro
+  369  git status
+  370  git commit -m "Completed node-into exercise."
+  371  git push origin node-intro
+  372  git switch master
+  373  man python
+  374  git status
+  375  git branch node-process
+  376  git switch node-process
+  377  man top
+  378  top
+  379  git status
+  380  git add node-process
+  381  git status
+  382  git commit -m "Completed node-process exercise."
+  383  git push origin node-process
+  384  git switch master
+  385  git switch command-line-basics
+  386  cd command-line-basics
+  387  ls
+  388  cat laziness.txt
+  389  cat impatience.txt
+  390  cat hubris.txt
+  391  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  392  cat three-virtues.txt
+  393  man ls
+  394  ls
+  395  ls -a
+  396  ls-F
+  397  ls -F
+  398  ls lfz-staff/
+  399  ls -aF lfz-staff > lfz-staff/contents.txt
+  400  cat lfz-staff/contents.txt
+  401  man pwd
+  402  pwd
+  403  pwd > i-was-here.txt
+  404  ls
+  405  cat i-was-here.txt
+  406  man echo
+  407  echo 'Hello, World!'
+  408  echo 'Hello, World!' > hello.txt
+  409  ls
+  410  cat hello.txt
+  411  man touch
+  412  touch tag-youre-it.txt
+  413  touch snoot/boop.txt
+  414  ls snoot/
+  415  man mkdir
+  416  mkdir parent
+  417  ls parent/
+  418  ls
+  419  man mkdir
+  420  mkdir -p parent/child/grandchild
+  421  ls -a
+  422  touch parent/child/grandchild/.gitkeep
+  423  ls -a
+  424  man mv
+  425  mv pokiemans pokemon
+  426  ls
+  427  man rm
+  428  rm lol.txt
+  429  ls
+  430  rm -r kill-me/
+  431  ls
+  432  man cp
+  433  cp and-then.txt no-and-then.txt
+  434  ls
+  435  cat and-then.txt
+  436  cat no-and-then.txt
+  437  man
+  438  man history
+  439  history
+  440  history > command-history.txt
