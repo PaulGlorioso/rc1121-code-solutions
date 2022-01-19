@@ -1,10 +1,10 @@
-const x = parseFloat(process.argv[2]);
-const y = parseFloat(process.argv[4]);
-const op = process.argv[3];
 const add = require('./add');
 const minus = require('./subtract');
 const multiply = require('./multiply');
 const divide = require('./divide');
+const x = parseFloat(process.argv[2]);
+const y = parseFloat(process.argv[4]);
+const op = process.argv[3];
 if (op === 'plus') {
   console.log(`${x} plus ${y} equals ${add(x, y)}`);
 } else if (op === 'minus') {
