@@ -1,0 +1,293 @@
+.container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* width: 90%; */
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e7e9ec;
+}
+
+.nav-button {
+  padding-right: 60px;
+}
+
+.font-family-tiempos {
+  font-family: "Tiempos Headline", serif;
+}
+
+.logo {
+  width: 18rem;
+  padding-left: 60px;
+}
+
+.nav-button > button {
+  border: 0 solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  color: #a0a0a0;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+}
+
+.nav-button > .contact-btn {
+  border: 1px solid #294464;
+  border-radius: 4px;
+  background-color: #294464;
+  color: white;
+  padding: 10px 15px;
+}
+
+.contact-btn:hover {
+  background-color: #0c4f79;
+}
+
+.logo > img {
+  width: 50%;
+}
+
+.hero {
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  height: 540px;
+  width: 90%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.hero > img {
+  width: 100%;
+}
+
+.hero > h1 {
+  width: 46%;
+  font-family: "Tiempos Headline", serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 70px;
+}
+
+.overlay {
+  background: rgba(105, 98, 98, 0.377);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero > p {
+  font-family: "Avenir", sans-serif;
+  line-height: 25px;
+  color: white;
+  width: 51%;
+  position: absolute;
+  bottom: 125px;
+  left: 70px;
+}
+
+.hero > button {
+  font-family: "Avenir", sans-serif;
+  font-size: large;
+  position: absolute;
+  left: 70px;
+  bottom: 70px;
+  border: 1px solid #294464;
+  border-radius: 4px;
+  background: #294464;
+  color: white;
+  width: 175px;
+  padding: 10px 0;
+}
+
+.pheads > h2 {
+  font-family: "Tiempos Headline", serif;
+  font-size: x-large;
+  letter-spacing: 1px;
+  color: #6e6e6e;
+  margin: 0;
+  text-align: center;
+}
+
+.pheads > p {
+  font-family: "Avenir", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #6e6e6e;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Avenir", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: #6e6e6e;
+  padding: 10px;
+  width: 350px;
+}
+
+.clinics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  margin: 50px;
+}
+
+.pheads {
+  width: 50%;
+  padding-top: 50px;
+}
+
+.pcolumns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.column-half {
+  flex-basis: calc(100% / 4);
+}
+
+.meet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(231, 233, 236);
+  width: 100%;
+}
+
+.more {
+  padding-left: 60px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.getButton {
+  padding-right: 90px;
+}
+
+.more > h2 {
+  font-family: "Tiempos Headline", serif;
+  font-size: x-large;
+  letter-spacing: 1px;
+  color: #6e6e6e;
+}
+
+.more > p {
+  font-family: "Avenir", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #6e6e6e;
+}
+
+.getButton > button {
+  font-family: "Avenir", sans-serif;
+  font-size: large;
+  border: 1px solid #294464;
+  border-radius: 4px;
+  background: #294464;
+  color: white;
+  width: 175px;
+  padding: 10px 0;
+}
+
+.graySpace {
+  display: flex;
+  justify-content: center;
+  background-color: #525351;
+  width: 100%;
+}
+
+.column-2 > img {
+  width: 25%;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+
+.column-2 > p {
+  font-family: "Avenir", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 15px;
+  color: white;
+  margin: 5px;
+}
+
+.column-2 {
+  width: 50%;
+  padding-bottom: 50px;
+  padding-left: 60px;
+}
+
+.column-4 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.column-4 > h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0;
+  text-align: left;
+  padding-top: 70px;
+  padding-left: 5px;
+}
+
+.column-4 > button {
+  border: 0 solid #525351;
+  background-color: #525351;
+  font-size: 13px;
+  color: white;
+  text-align: left;
+  padding: 7px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px;
+  padding-left: 40px;
+}
+
+.footer > button {
+  margin: 20px;
+  border: 0 solid white;
+  background-color: white;
+  color: #525351;
+  font-size: 15px;
+}
+
+.hero > button:hover {
+  background: #345680;
+}
