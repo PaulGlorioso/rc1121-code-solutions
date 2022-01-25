@@ -21,17 +21,13 @@ const grades = {
     score: 92
   }
 };
-function gArray(ob) {
-  const gOb = [];
-  for (const prop in ob) {
-    const newOb = ob[prop];
-    gOb.push(newOb);
-  }
-  return gOb;
-}
 
 app.get('/api/grades', (req, res) => {
-  res.json(gArray(grades));
+  const gOb = [];
+  for (const prop in grades) {
+    gOb.push(grades[prop]);
+  }
+  res.json(gOb);
 });
 
 app.listen(3000, () => {
