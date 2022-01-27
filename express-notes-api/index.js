@@ -19,7 +19,7 @@ app.get('/api/notes', (req, res) => {
 
 app.get('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
-  if (!id) {
+  if (!id || id <= 0) {
     return res.status(400).send({ error: 'ID must be a positive integer' });
   }
   if (!notes.notes[id]) {
@@ -32,7 +32,7 @@ app.get('/api/notes/:id', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
   const data = req.body;
-  if (!req.is('application/json') || req.is() === null) {
+  if (!data.content) {
     return res.status(400).send({ error: 'Content is a required field' });
   }
   data.id = nextId;
@@ -50,7 +50,7 @@ app.post('/api/notes', (req, res) => {
 
 app.delete('/api/notes/:id', (req, res) => {
   const noteId = Number(req.params.id);
-  if (!noteId) {
+  if (!noteId || noteId <= 0) {
     return res.status(400).send({ error: 'Id should be a postive integer' });
   }
   if (!notes.notes[noteId]) {
@@ -69,14 +69,14 @@ app.delete('/api/notes/:id', (req, res) => {
 
 app.put('/api/notes/:id', (req, res) => {
   const noteId = Number(req.params.id);
-  if (!noteId) {
+  if (!noteId || noteId <= 0) {
     return res.status(400).send({ error: 'Id should be a postive integer' });
   }
   if (!notes.notes[noteId]) {
     return res.status(404).send({ error: 'Cannot find note with Id ' + noteId });
   }
   const data = req.body;
-  if (!req.is('application/json') || req.is() === null) {
+  if (!data.content) {
     return res.status(400).send({ error: 'Content is a required field' });
   }
   const newNotes = JSON.stringify(update(notes, noteId, data), null, 2);
