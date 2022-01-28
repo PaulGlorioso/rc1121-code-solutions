@@ -2,7 +2,7 @@ select "films"."releaseYear",
        "genres"."name"
   from "films"
     join "filmGenre"
-      on "films"."filmId" = "filmGenre"."filmId"
+      using ("filmId")
     join "genres"
-      on "genres"."genreId" = "filmGenre"."genreId"
+      using ("genreId")
   where "title" = 'Boogie Amelie';

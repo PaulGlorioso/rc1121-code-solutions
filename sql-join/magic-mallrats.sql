@@ -2,9 +2,9 @@ select "firstName",
        "lastName"
   from "customers"
     join "rentals"
-      on "customers"."customerId" = "rentals"."customerId"
+      using ("customerId")
     join "inventory"
-      on "inventory"."inventoryId" = "rentals"."inventoryId"
+      using ("inventoryId")
     join "films"
-      on "films"."filmId" = "inventory". "filmId"
+      using ("filmId")
   where "films"."title" = 'Magic Mallrats';

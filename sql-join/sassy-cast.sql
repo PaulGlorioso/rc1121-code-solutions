@@ -2,7 +2,7 @@ select "firstName",
        "lastName"
   from "actors"
     join "castMembers"
-      on "actors"."actorId" = "castMembers"."actorId"
+      using ("actorId")
     join "films"
-      on "films"."filmId" = "castMembers"."filmId"
+      using ("filmId")
   where "films"."title" = 'Jersey Sassy';
