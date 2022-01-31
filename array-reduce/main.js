@@ -25,11 +25,11 @@ const product = numbers.reduce(multi);
 console.log('product', product);
 
 let total = 0;
-const bank = (previous, current, index) => {
-  if (account[index].type === 'deposit') {
-    total = total + account[index].amount;
-  } else if (account[index].type === 'withdrawal') {
-    total = total - account[index].amount;
+const bank = (previous, current) => {
+  if (current.type === 'deposit') {
+    total = total + current.amount;
+  } else if (current.type === 'withdrawal') {
+    total = total - current.amount;
   }
   return total;
 };
@@ -37,8 +37,8 @@ const balance = account.reduce(bank, 0);
 console.log('balance', balance);
 
 const newOb = {};
-const prop = (previous, current, index) => {
-  Object.assign(newOb, traits[index]);
+const prop = (previous, current) => {
+  Object.assign(newOb, current);
   return newOb;
 };
 const composite = traits.reduce(prop, 0);
