@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hot-button {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(70 70 70);
+  border-radius: 0.25rem;
+  position: relative;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.hot-button:focus {
+  outline: none;
+}
+
+.hot-button:active {
+  top: 3px;
+}
+
+.hot-button.cold {
+  background-color: #351c75;
+}
+
+.hot-button.cool {
+  background-color: #674ea7;
+}
+
+.hot-button.tepid {
+  background-color: #e06666;
+}
+
+.hot-button.warm {
+  background-color: #f6b26b;
+}
+
+.hot-button.hot {
+  background-color: #ff0;
+}
+
+.hot-button.nuclear {
+  background-color: rgb(255 255 255);
+}
+
+.hot-button.cold,
+.hot-button.cool,
+.hot-button.tepid {
+  color: rgb(255 255 255);
+}
