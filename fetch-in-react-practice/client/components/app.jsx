@@ -66,36 +66,21 @@ export default class App extends React.Component {
      * TIP: Be sure to SERIALIZE the updates in the body with JSON.stringify()
      * And specify the "Content-Type" header as "application/json"
      */
-    const arr = this.state.todos;
+    const arr = this.state.todos.slice();
     const index = this.state.todos.findIndex(x => x.todoId === todoId);
-    let obj = this.state.todos.find(x => x.todoId === todoId);
-    if (obj.isCompleted === false) {
-      const now = { isCompleted: true };
-      fetch(`api/todos/${todoId}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(now)
-      })
-        .then(res => res.json())
-        .then(todos => {
-          obj = todos;
-          arr[index] = obj;
-          this.setState({ todos: arr });
-        });
-    } else if (obj.isCompleted === true) {
-      const now = { isCompleted: false };
-      fetch(`api/todos/${todoId}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(now)
-      })
-        .then(res => res.json())
-        .then(todos => {
-          obj = todos;
-          arr[index] = obj;
-          this.setState({ todos: arr });
-        });
-    }
+    const obj = this.state.todos.find(x => x.todoId === todoId);
+    const now = { isCompleted: !obj.isCompleted };
+    fetch(`api/todos/${todoId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(now)
+    })
+      .then(res => res.json())
+      .then(todos => {
+        arr[index] = todos;
+        this.setState({ todos: arr });
+      });
+
   }
 
   render() {
