@@ -1,0 +1,26 @@
+User can sign up.
+  When a user inputs their information into the form:
+  the values are pulled from the form, sent to state, and are sent to the api via fetch where the
+  information is then sent to a server where then the values are evaluated,
+  the password input is then hashed by some password hasher, and then the users information
+  then is either saved to the database or the server sends back an error back
+  to the client if the values they input are not acceptable. If the
+  credentials are acceptable, the server sends back a token that is saved to
+  local storage.
+User can sign in.
+  When a user signs in, they input their credentials in the appropriate sign in
+  form where upon submission, the values input are saved to state and the submit handler sends an request to the server
+  where the credentials are then evaluated, if the user is found, the password
+  is then hashed and compared to known hashed password, if the passwords match,
+  the user is sent back a token that is saved to local storage. Through react
+  context and route handling, the page is rendered appropriately to reflect
+  whether there is a user is found in state and the page renders a landing page.
+User can stay signed in (even if they refresh the page).
+  When a user signs in, a token was generated and saved to local storage. State
+  locates that token which indicates the user has already been authorized for log in.
+  The page pulls the appropriate path from state, and the page renders accordingly.
+User can sign out.
+  If a user is found within context and user clicks on a button labeled for
+  signing out, the app sets the user property of its state to null and removing
+  a certain key-value pair from local storage. Since no user is present on state,
+  the page renders a sign-in/sign-up form.
