@@ -3,37 +3,41 @@ import React from 'react';
 export default class HotButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { clicks: 0 };
+    this.state = {
+      className: 'hot-button cold'
+    };
     this.handleClicks = this.handleClicks.bind(this);
     this.renderButton = this.renderButton.bind(this);
+    this.changeClass = this.changeClass.bind(this);
   }
 
   handleClicks() {
-    this.setState(({ clicks }) => ({
-      clicks: clicks + 1
-    }));
-    const button = document.querySelector('.hot-button');
-    const clicks = this.state.clicks;
-    if (clicks <= 3) {
-      button.className = 'hot-button cold';
-    } else if (clicks <= 6) {
-      button.className = 'hot-button cool';
-    } else if (clicks <= 9) {
-      button.className = 'hot-button tepid';
-    } else if (clicks <= 12) {
-      button.className = 'hot-button warm';
-    } else if (clicks <= 15) {
-      button.className = 'hot-button hot';
-    } else {
-      button.className = 'hot-button nuclear';
-    }
+    const clicks = 0;
+    this.changeClass(clicks);
+  }
 
+  changeClass(clicks) {
+    let className = this.state.className;
+    if (clicks <= 3) {
+      className = 'hot-button cold';
+    } else if (clicks <= 6) {
+      className = 'hot-button cool';
+    } else if (clicks <= 9) {
+      className = 'hot-button tepid';
+    } else if (clicks <= 12) {
+      className = 'hot-button warm';
+    } else if (clicks <= 15) {
+      className = 'hot-button hot';
+    } else {
+      className = 'hot-button nuclear';
+    }
+    return className;
   }
 
   renderButton() {
     return (
       <div>
-        <button className='hot-button cold' onClick={() => this.handleClicks()}>Hot Button</button>
+        <button className={this.state.className} onClick={() => this.handleClicks()}>Hot Button</button>
         <p>Clicks: {this.state.clicks}</p>
     </div>
     );
