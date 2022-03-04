@@ -9,8 +9,8 @@ const pokedex = [
   { number: '039', name: 'Jigglypuff' }
 ];
 
-const pokemon = pokedex.map(pokedex =>
-  <li key ={pokedex.number}>{pokedex.name}</li>
+const pokemon = pokedex.map(dex =>
+  <li key ={dex.number}>{dex.name}</li>
 );
 
 ReactDom.render(
