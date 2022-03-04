@@ -4,6 +4,7 @@ export default class HotButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      clicks: 0,
       className: 'hot-button cold'
     };
     this.handleClicks = this.handleClicks.bind(this);
@@ -12,26 +13,27 @@ export default class HotButton extends React.Component {
   }
 
   handleClicks() {
-    const clicks = 0;
-    this.changeClass(clicks);
+    const click = this.state.clicks;
+    this.changeClass(this.setState({ clicks: click + 1 }));
   }
 
-  changeClass(clicks) {
-    let className = this.state.className;
+  changeClass() {
+    const clicks = this.state.clicks;
     if (clicks <= 3) {
-      className = 'hot-button cold';
+      this.setState({ className: 'hot-button cold' });
     } else if (clicks <= 6) {
-      className = 'hot-button cool';
+      this.setState({ className: 'hot-button cool' });
     } else if (clicks <= 9) {
-      className = 'hot-button tepid';
+      this.setState({ className: 'hot-button tepid' });
     } else if (clicks <= 12) {
-      className = 'hot-button warm';
+      this.setState({ className: 'hot-button warm' });
     } else if (clicks <= 15) {
-      className = 'hot-button hot';
+      this.setState({ className: 'hot-button hot' });
+    } else if (clicks <= 18) {
+      this.setState({ className: 'hot-button nuclear' });
     } else {
-      className = 'hot-button nuclear';
+      return this.state.className;
     }
-    return className;
   }
 
   renderButton() {
